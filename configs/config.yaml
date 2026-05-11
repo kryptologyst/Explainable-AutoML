@@ -1,0 +1,33 @@
+# @package _global_
+defaults:
+  - _self_
+  - data: iris
+  - model: tpot_classifier
+  - explainer: shap_explainer
+  - experiment: default
+
+# Experiment settings
+experiment:
+  name: "explainable_automl"
+  tags: ["xai", "automl", "research"]
+  seed: 42
+  
+# Paths
+paths:
+  data_dir: "data"
+  output_dir: "assets"
+  checkpoint_dir: "checkpoints"
+  log_dir: "logs"
+
+# Device settings
+device: "auto"  # auto, cpu, cuda, mps
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+# Safety and ethics
+safety:
+  disclaimer: "This is a research/educational tool. Not for production decisions or control."
+  ethics_note: "Ensure proper consent and privacy protection when using with real data."

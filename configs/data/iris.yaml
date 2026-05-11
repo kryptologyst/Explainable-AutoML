@@ -1,0 +1,15 @@
+# @package data
+_target_: explainable_automl.data.loaders.IrisDataLoader
+
+name: "iris"
+test_size: 0.2
+random_state: 42
+feature_names:
+  - "sepal_length"
+  - "sepal_width" 
+  - "petal_length"
+  - "petal_width"
+target_names:
+  - "setosa"
+  - "versicolor"
+  - "virginica"

@@ -1,0 +1,7 @@
+# @package explainer
+_target_: explainable_automl.explainers.shap_explainer.SHAPExplainer
+
+method: "kernel"  # kernel, tree, linear, deep
+background_samples: 100
+max_samples: 1000
+feature_names: null  # Will be set from data
